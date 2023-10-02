@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
 @mixin mobile {
   @media screen and (max-width: 480px) {
     @content;
@@ -15,7 +18,7 @@
 }
 
 .formContainer {
-  background-color: #a7bcff;
+  background-color: #141316;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -31,7 +34,7 @@
     align-items: center;
 
     .logo {
-      color: #5d5b8d;
+      color: #007E62;
       font-weight: bold;
       font-size: 24px;
 
@@ -58,8 +61,8 @@
       }
 
       button {
-        background-color: #7b96ec;
-        color: white;
+        background-color: #47EDCB;
+        color: #007E62;
         padding: 10px;
         font-weight: bold;
         border: none;
@@ -88,7 +91,7 @@
 }
 
 .home {
-  background-color: #a7bcff;
+  background-color: #141316;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -107,13 +110,13 @@
 
     .sidebar {
       flex: 1;
-      background-color: #3e3c61;
+      background-color: #00E5BA;
       position: relative;
 
       .navbar {
         display: flex;
         align-items: center;
-        background-color: #2f2d52;
+        background-color: #00B495;
         height: 50px;
         padding: 10px;
         justify-content: space-between;
@@ -121,6 +124,7 @@
 
         .logo {
           font-weight: bold;
+          color: #2A2536;
           @include tablet {
             display: none;
           }
@@ -136,6 +140,13 @@
             width: 24px;
             border-radius: 50%;
             object-fit: cover;
+          }
+
+          span{
+            color: #2F4858;
+            font-size: 15px;
+            font-weight: bold;
+            font-family: 'Raleway', sans-serif;
           }
 
           button {
@@ -160,11 +171,11 @@
           input {
             background-color: transparent;
             border: none;
-            color: white;
+            color: #2A2536;
             outline: none;
 
             &::placeholder {
-              color: lightgray;
+              color: #2A2536;
             }
           }
         }
@@ -176,10 +187,17 @@
         align-items: center;
         gap: 10px;
         color: white;
+        font-family: 'Josefin Sans', sans-serif;
         cursor: pointer;
 
         &:hover {
           background-color: #2f2d52;
+
+          .userChatInfo{
+            span , p{
+              color: white;
+            }
+          }
         }
 
         img {
@@ -193,10 +211,14 @@
           span {
             font-size: 18px;
             font-weight: 500;
+            color: #2F4858;
+            font-family: 'Josefin Sans', sans-serif;
           }
+          
           p {
             font-size: 14px;
-            color: lightgray;
+            color: #2F4858;
+            font-family: 'PT Sans Narrow', sans-serif;
           }
         }
       }
@@ -206,12 +228,17 @@
 
       .chatInfo {
         height: 50px;
-        background-color: #5d5b8d;
+        background-color: #00977e;
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 10px;
         color: lightgray;
+
+        span{
+          font-family: 'Josefin Sans', sans-serif;
+          font-size: 20px;
+        }
       }
 
       .chatIcons {
@@ -225,7 +252,7 @@
       }
 
       .messages {
-        background-color: #ddddf7;
+        background-color: #FBF8FF;
         padding: 10px;
         height: calc(100% - 160px);
         overflow: scroll;
@@ -316,6 +343,7 @@
             padding: 10px 15px;
             color: white;
             background-color: #8da4f1;
+            border-radius: 50%;
             cursor: pointer;
           }
         }
