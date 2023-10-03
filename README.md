@@ -32,7 +32,7 @@ Before you begin, ensure you have met the following requirements:
    cd chat_and_notification_feature_codepth
 
 ##Dockerization
-```bash
+1. ```bash
     docker-compose up
 
 
