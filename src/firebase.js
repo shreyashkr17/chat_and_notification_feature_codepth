@@ -2,6 +2,8 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getStorage } from "firebase/storage";
 import { getFirestore } from "firebase/firestore";
+// import {getMessaging } from "firebase/messaging"
+// import "dotenv/config";
 
 const firebaseConfig = {
   apiKey: "AIzaSyAhL9NgHUKgAViDQXXOA475oyWoXNpS81M",
@@ -17,4 +19,5 @@ const firebaseConfig = {
 export const app = initializeApp(firebaseConfig);
 export const auth = getAuth();
 export const storage = getStorage();
-export const db = getFirestore()
+export const db = getFirestore();
+// export const messaging = getMessaging(app);

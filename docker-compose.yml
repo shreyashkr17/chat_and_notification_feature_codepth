@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  web:
+    build:
+      context: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./src:/app/src
+      - ./public:/app/public
+    environment: 
+      - REACT_APP_FIREBASE_API_KEY=AIzaSyAhL9NgHUKgAViDQXXOA475oyWoXNpS81M
+      - REACT_APP_FIREBASE_AUTH_DOMAIN=chat-7278a.firebaseapp.com
+      - REACT_APP_FIREBASE_PROJECT_ID=chat-7278a
+      - REACT_APP_FIREBASE_STORAGE_BUCKET=chat-7278a.appspot.com
+      - REACT_APP_FIREBASE_MESSAGING_SENDER_ID=1878232299
+      - REACT_APP_FIREBASE_APP_ID=1:1878232299:web:c52528d0d9136afc3482ae
+      - REACT_APP_FIREBASE_MEASUREMENT_ID=G-G7YD5P2ZF0 
