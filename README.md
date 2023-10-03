@@ -33,11 +33,6 @@ Before you begin, ensure you have met the following requirements:
 
 ##Dockerization
 ```bash
-    Start the Docker containers:
     docker-compose up
 
-##Usage
-Open a web browser and navigate to http://localhost:3000 to access the application.
-Sign in or register to use the chat and notification features.
-Enjoy real-time chat and notifications!
 
