@@ -14,6 +14,8 @@ import {
 import { db, storage } from "../firebase";
 import { v4 as uuid } from "uuid";
 import { getDownloadURL, ref, uploadBytesResumable } from "firebase/storage";
+// import {sendMessage} from "../firebase"
+// import * as admin from "firebase-admin"
 
 const Input = () => {
   const [text, setText] = useState("");
@@ -21,6 +23,32 @@ const Input = () => {
 
   const { currentUser } = useContext(AuthContext);
   const { data } = useContext(ChatContext);
+
+  // const registrationToken = "Recipient_FCM_token";
+
+  // const sendNotification = async (recipientToken, senderName) => {
+  //   // Create a notification message
+  //   const message = {
+  //     notification: {
+  //       title: "New Message",
+  //       body: `You have received a new message from ${senderName}`,
+  //     },
+  //     token: recipientToken, // The FCM token of the recipient
+  //   };
+
+  //   try {
+  //     // Send the notification using Firebase Admin SDK
+  //     const response = await admin.messaging().send(message);
+  //     console.log("Notification sent successfully:", response);
+  //   } catch (error) {
+  //     console.error("Error sending notification:", error);
+  //   }
+  // };
+
+  // const handleSendMessage = async () => {
+  //   await sendMessage(currentUser.uid, recipientUid, text);
+  //   sendNotification(recipientToken,currentUser.displayName);
+  // }
 
   
 
