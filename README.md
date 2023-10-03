@@ -32,8 +32,9 @@ Before you begin, ensure you have met the following requirements:
    cd chat_and_notification_feature_codepth
 
 ##Dockerization
-Start the Docker containers:
-docker-compose up
+```bash
+    Start the Docker containers:
+    docker-compose up
 
 ##Usage
 Open a web browser and navigate to http://localhost:3000 to access the application.
